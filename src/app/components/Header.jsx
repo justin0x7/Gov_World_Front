@@ -71,9 +71,9 @@ function Header({ type }) {
                     <div className="dFlex">
                         <div className='LogoWrap'>
                             <Link href={"/"}>
-                                <Image src="/images/govworldlogo.png" width={50} height={48} alt="Metaport" priority={true} />
+                                <Image src="/images/Gov.svg" width={50} height={48} alt="govworld" priority={true} />
                             </Link>
-                            {/* <span className='logoTitle'>govworld</span> */}
+                            <Image src="/images/GovText.png" width={176.219} height={16.298} alt="govworld" priority={true} />
                         </div>
 
                         <Menu />

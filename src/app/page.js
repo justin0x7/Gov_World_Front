@@ -9,6 +9,7 @@ import Stack from '@mui/material/Stack';
 import Footer from "./components/Footer";
 import ProcessTextSlider from "./components/ProcessTextSlider";
 import { useTranslation } from "react-i18next";
+import Image from 'next/image';
 
 export default function Home() {
     const { t } = useTranslation();
@@ -165,7 +166,7 @@ export default function Home() {
                 </Container> */}
             </div>
 
-            <div className="ServiceWrap">
+            {/* <div className="ServiceWrap">
                 <Container>
                     <Row>
                         <Col md={12} style={{ position: "relative" }}>
@@ -189,22 +190,24 @@ export default function Home() {
                         </Col>
                     </Row>
                 </Container>
-            </div>
+            </div> */}
 
             <div className="ServiceWrap">
                 <Container>
                     <Row>
                         <Col md={12} style={{ position: "relative" }}>
                             <Container className="LoanMarketPlace">
-                                <h2>Finally, stablecoin loans for strong-holders</h2>
-                                <Row>
+                            <Image className="diamondTitle" src="/images/welcome.png" width={160} height={35} alt="govworld" priority={true} />
+                            <br />
+                            <Image className="diamondTitle" src="/images/diamondhands.png" width={290} height={35} alt="govworld" priority={true} />
+                                <Row className="loanPadding">
                                     <Col md={8} className="ThreeColors">
                                         <img className="Loan" src="/images/loan_marketplace.png" alt="Loan" />
 
                                     </Col>
                                     <Col md={4}>
                                         <div className="P2P">
-                                            <h1>Peer to Peer</h1>
+                                            <h1>MAX P2P </h1>
                                             <p>The defi "eBay" for short-term loans to community members.
                                                 Most stablecoin yield pools are made for very few approved tokens and generate low APY%.
                                                 Our users set their own loan terms and compete for loans which generate the highest APY% to lenders.

@@ -384,6 +384,135 @@ header.HeaderWrap .headerRight ul li.button a:hover {
 	letter-spacing: 1.56px;
 }
 
+.animationText1 {
+	animation: 5s anim-lineUp1 ease-out ;
+}
+
+.animationText2 {
+	animation: 5s anim-lineUp2 ease-out ;
+}
+
+.animationText3 {
+	animation: 5s anim-lineUp3 ease-out ;
+}
+
+.animationText4 {
+	animation: 5s anim-zoomIn ease-out ;
+}
+
+.animationText5 {
+	transform: scale(0.94);
+	animation: scale 5s ease-out ;
+	writing-mode: horizontal-tb;
+}
+
+@keyframes scale {
+	0% {
+		opacity: 0;
+		transform: scale(3);
+	}
+
+	60% {
+		opacity: 0;
+		transform: scale(2.2);
+	}
+
+	80% {
+		opacity: 1;
+		transform: scale(1.4);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes anim-zoomIn {
+	0% {
+		opacity: 0;
+		transform: scale(0.1, 0.1);
+	}
+
+	40% {
+		opacity: 0;
+		transform: scale(0.4, 0.4);
+	}
+
+	50% {
+		opacity: 1;
+		transform: scale(0.7, 0.7);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1, 1);
+	}
+}
+
+@keyframes anim-lineUp1 {
+	0% {
+		opacity: 0;
+		transform: translateY(-80%);
+	}
+
+	10% {
+		opacity: 0;
+	}
+
+	20% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+@keyframes anim-lineUp2 {
+	0% {
+		opacity: 0;
+		transform: translateY(-80%);
+	}
+
+	20% {
+		opacity: 0;
+	}
+
+	30% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+@keyframes anim-lineUp3 {
+	0% {
+		opacity: 0;
+		transform: translateY(-80%);
+	}
+
+	30% {
+		opacity: 0;
+	}
+
+	40% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
 .HeroContent p {
 	width: 60%;
 	margin-bottom: 20px;
@@ -2162,10 +2291,10 @@ h4.c-rich-nav__heading-link a:hover span {
 
 /* End Menu Css*/
 
-.LogoWrap img {
+/* .LogoWrap img {
 	width: 50px;
 	height: auto;
-}
+} */
 
 /* Responsive */
 @media (max-width: 1200px) {
@@ -3012,11 +3141,11 @@ h4.c-rich-nav__heading-link a:hover span {
 	background-size: auto 100%;
 	color: white;
 	align-items: center;
-	text-align: center;
+	/* text-align: center; */
 }
 
 .LoanMarketPlace h1 {
-	color: #BD0AF8;
+	color: #4C4FFB;
 	font-size: 38;
 	margin-bottom: 20px;
 	margin-top: 50px;
@@ -3034,6 +3163,19 @@ h4.c-rich-nav__heading-link a:hover span {
 	font-size: 22px;
 	margin-bottom: 50px;
 	text-align: left;
+}
+
+.loanPadding {
+	padding-top: 60px;
+}
+
+.diamondTitle {
+	margin-left: 50px;
+	padding-bottom: 10px;
+}
+
+@keyframes diamond slide {
+	
 }
 
 /* .ThreeColors {
@@ -3442,24 +3584,3 @@ h4.c-rich-nav__heading-link a:hover span {
 	padding-top: 50px;
 	padding-right: 120px;
 }
-
-/* .logoTitle {
-	display: flex;
-	width: 176.219px;
-	height: 16.298px;
-	flex-direction: column;
-	justify-content: center;
-	flex-shrink: 0;
-	color: rgba(255, 255, 255, 0.30);
-	font-family: fantasy;
-	font-size: 24.89px;
-	font-style: normal;
-	font-weight: 50;
-	line-height: normal;
-	letter-spacing: 0.507px;
-	padding-left: 20px;
-	text-transform: uppercase;
-	justify-content: center;
-	align-items: center;
-	line-height: normal;
-} */

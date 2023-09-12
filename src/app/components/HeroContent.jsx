@@ -51,11 +51,11 @@ function HeroContent({ interval = 3000 }) {
                 <Container>
                     <Row>
                         <Col md={12} className="SpaceText">
-                            <h3>{t("BORROW")}</h3>
-                            <h3>{t("STABLECOINS")},</h3>
-                            <h3>{t("KEEP YOUR")}</h3>
-                            <h1><img src="/images/crypto.png" alt="crypto" /></h1>
-                            <h5>For decentralized, diamond-handed. communities everywhere.
+                            <h3 className="animationText1">{t("BORROW")}</h3>
+                            <h3 className="animationText2">{t("STABLECOINS")},</h3>
+                            <h3 className="animationText3">{t("KEEP YOUR")}</h3>
+                            <h1 className="animationText4"><img src="/images/crypto.png" alt="crypto" /></h1>
+                            <h5 className="animationText5">For decentralized, diamond-handed. communities everywhere.
                                 <br />
                                 Unlock liquidity and maintain all native benefits.
                             </h5>
