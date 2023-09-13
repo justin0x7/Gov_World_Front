@@ -26,7 +26,7 @@ function Footer({ type }) {
                 </div >
             }
 
-            {
+            {/* {
                 type === "Home" &&
                 <div className="InfoWrap">
                     <Container>
@@ -40,7 +40,7 @@ function Footer({ type }) {
                         </Row>
                     </Container>
                 </div>
-            }
+            } */}
 
             {
                 type === "About" &&
@@ -77,7 +77,7 @@ function Footer({ type }) {
             <footer className='footerWrap'>
                 <Container>
                     <Row>
-                        <Col md={3}>
+                        {/* <Col md={3}>
                             <div className="widget">
 
                                 <Image src="/images/logo.svg" width={209} height={41} alt="Metaport" className='fLogo' style={{ width: 209, height: 'auto' }} priority={true} />
@@ -92,9 +92,9 @@ function Footer({ type }) {
                                     <li><a href="#"><i className="fab fa-discord"></i></a></li>
                                 </ul>
                             </div>
-                        </Col>
+                        </Col> */}
 
-                        <Col md={3}>
+                        {/* <Col md={3}>
                             <div className="widget" style={{ paddingLeft: 60 }}>
                                 <h3>{t("Services")}</h3>
 
@@ -147,20 +147,26 @@ function Footer({ type }) {
                                     </div>
                                 </div>
                             </div>
-                        </Col>
+                        </Col> */}
 
                     </Row>
-
+                    <div className='footerLogo'>
+                    <Image className='footerLogoIcon' src="/images/Gov.svg" width={50} height={48} alt="govworld" />
+                    <Image className='footerLogoIcon' src="/images/GovText.png" width={176.219} height={16.298} alt="govworld"  />
+                    </div>
+                    <div className="Social">
+                    <img className="socialIcon" src="/images/telegram.png"  alt="Telegram" />
+                    <img className="socialIcon" src="/images/twitter.png"  alt="Twitter" />
+                    <img className="socialIcon" src="/images/medium.png"  alt="Medium" />
+                    <img className="socialIcon" src="/images/linkedin.png"  alt="Linkedin" />
+                    </div>
                     <Row>
-                        <hr />
-                        <Col md={6}>
-                            <p className='copyright'>&copy;2023 <a href="#">metaport</a> {t("Information Technology")} LLC.</p>
+                        {/* <hr /> */}
+                        <Col md={4}></Col>
+                        <Col md={4}>
+                            <p className='copyright'>{t("All rights reserved,")}2021.</p>
                         </Col>
-                        <Col md={6} className='text-end'>
-                            <ul className='footerMenu'>
-                                <li><a href="#">{t("Privacy Policy")}</a></li>
-                            </ul>
-                        </Col>
+                        <Col md={4}></Col>
                     </Row>
                 </Container>
             </footer>

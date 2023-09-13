@@ -59,7 +59,7 @@ function HeroContent({ interval = 3000 }) {
                                 <br />
                                 Unlock liquidity and maintain all native benefits.
                             </h5>
-                                <h1><GovButton
+                                <h1 className="rotateButton"><GovButton
                                     navigatePath="/"
                                     buttonName="Launch App"
                                     length="3"
